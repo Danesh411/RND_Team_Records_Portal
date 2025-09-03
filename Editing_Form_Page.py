@@ -141,9 +141,9 @@ def edit_page():
                     "approx_volume": approx_volume,
                     "method": method,
                     "is_proxy_used": int(is_proxy_used),
-                    "proxy_name": proxy_name,
-                    "credits": credits,
-                    "complexity": complexity,
+                    "proxy_name": proxy_name if is_proxy_used and feasible_for != "Not Checked" else "",
+                    "credits": credits if is_proxy_used and feasible_for != "Not Checked" else 0,
+                    "complexity": complexity if feasible_for != "Not Checked" else "Not Checked",
                     "last_checked_date": last_checked_date,
                     "gitHub_code_link": gitHub_code_link,
                     "sow_doc": sow_doc
