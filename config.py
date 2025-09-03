@@ -10,7 +10,7 @@ from datetime import datetime, date
 # ===========================
 # ===========================
 DB_CONFIG = {
-    "host": "172.27.132.145",
+    "host": "15.235.85.189",
     "user": "root",
     "password": "actowiz",
     "database": "rnd_team_record"
